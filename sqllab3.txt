@@ -1,0 +1,2132 @@
+exercise: select queries
+
+
+SQL> 
+SQL> select employee_id, last_name, job_id, hire_date startdate
+  2  from employees;
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        100 King                      AD_PRES    17-JUN-03                      
+        101 Kochhar                   AD_VP      21-SEP-05                      
+        102 De Haan                   AD_VP      13-JAN-01                      
+        103 Hunold                    IT_PROG    03-JAN-06                      
+        104 Ernst                     IT_PROG    21-MAY-07                      
+        105 Austin                    IT_PROG    25-JUN-05                      
+        106 Pataballa                 IT_PROG    05-FEB-06                      
+        107 Lorentz                   IT_PROG    07-FEB-07                      
+        108 Greenberg                 FI_MGR     17-AUG-02                      
+        109 Faviet                    FI_ACCOUNT 16-AUG-02                      
+        110 Chen                      FI_ACCOUNT 28-SEP-05                      
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        111 Sciarra                   FI_ACCOUNT 30-SEP-05                      
+        112 Urman                     FI_ACCOUNT 07-MAR-06                      
+        113 Popp                      FI_ACCOUNT 07-DEC-07                      
+        114 Raphaely                  PU_MAN     07-DEC-02                      
+        115 Khoo                      PU_CLERK   18-MAY-03                      
+        116 Baida                     PU_CLERK   24-DEC-05                      
+        117 Tobias                    PU_CLERK   24-JUL-05                      
+        118 Himuro                    PU_CLERK   15-NOV-06                      
+        119 Colmenares                PU_CLERK   10-AUG-07                      
+        120 Weiss                     ST_MAN     18-JUL-04                      
+        121 Fripp                     ST_MAN     10-APR-05                      
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        122 Kaufling                  ST_MAN     01-MAY-03                      
+        123 Vollman                   ST_MAN     10-OCT-05                      
+        124 Mourgos                   ST_MAN     16-NOV-07                      
+        125 Nayer                     ST_CLERK   16-JUL-05                      
+        126 Mikkilineni               ST_CLERK   28-SEP-06                      
+        127 Landry                    ST_CLERK   14-JAN-07                      
+        128 Markle                    ST_CLERK   08-MAR-08                      
+        129 Bissot                    ST_CLERK   20-AUG-05                      
+        130 Atkinson                  ST_CLERK   30-OCT-05                      
+        131 Marlow                    ST_CLERK   16-FEB-05                      
+        132 Olson                     ST_CLERK   10-APR-07                      
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        133 Mallin                    ST_CLERK   14-JUN-04                      
+        134 Rogers                    ST_CLERK   26-AUG-06                      
+        135 Gee                       ST_CLERK   12-DEC-07                      
+        136 Philtanker                ST_CLERK   06-FEB-08                      
+        137 Ladwig                    ST_CLERK   14-JUL-03                      
+        138 Stiles                    ST_CLERK   26-OCT-05                      
+        139 Seo                       ST_CLERK   12-FEB-06                      
+        140 Patel                     ST_CLERK   06-APR-06                      
+        141 Rajs                      ST_CLERK   17-OCT-03                      
+        142 Davies                    ST_CLERK   29-JAN-05                      
+        143 Matos                     ST_CLERK   15-MAR-06                      
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        144 Vargas                    ST_CLERK   09-JUL-06                      
+        145 Russell                   SA_MAN     01-OCT-04                      
+        146 Partners                  SA_MAN     05-JAN-05                      
+        147 Errazuriz                 SA_MAN     10-MAR-05                      
+        148 Cambrault                 SA_MAN     15-OCT-07                      
+        149 Zlotkey                   SA_MAN     29-JAN-08                      
+        150 Tucker                    SA_REP     30-JAN-05                      
+        151 Bernstein                 SA_REP     24-MAR-05                      
+        152 Hall                      SA_REP     20-AUG-05                      
+        153 Olsen                     SA_REP     30-MAR-06                      
+        154 Cambrault                 SA_REP     09-DEC-06                      
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        155 Tuvault                   SA_REP     23-NOV-07                      
+        156 King                      SA_REP     30-JAN-04                      
+        157 Sully                     SA_REP     04-MAR-04                      
+        158 McEwen                    SA_REP     01-AUG-04                      
+        159 Smith                     SA_REP     10-MAR-05                      
+        160 Doran                     SA_REP     15-DEC-05                      
+        161 Sewall                    SA_REP     03-NOV-06                      
+        162 Vishney                   SA_REP     11-NOV-05                      
+        163 Greene                    SA_REP     19-MAR-07                      
+        164 Marvins                   SA_REP     24-JAN-08                      
+        165 Lee                       SA_REP     23-FEB-08                      
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        166 Ande                      SA_REP     24-MAR-08                      
+        167 Banda                     SA_REP     21-APR-08                      
+        168 Ozer                      SA_REP     11-MAR-05                      
+        169 Bloom                     SA_REP     23-MAR-06                      
+        170 Fox                       SA_REP     24-JAN-06                      
+        171 Smith                     SA_REP     23-FEB-07                      
+        172 Bates                     SA_REP     24-MAR-07                      
+        173 Kumar                     SA_REP     21-APR-08                      
+        174 Abel                      SA_REP     11-MAY-04                      
+        175 Hutton                    SA_REP     19-MAR-05                      
+        176 Taylor                    SA_REP     24-MAR-06                      
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        177 Livingston                SA_REP     23-APR-06                      
+        178 Grant                     SA_REP     24-MAY-07                      
+        179 Johnson                   SA_REP     04-JAN-08                      
+        180 Taylor                    SH_CLERK   24-JAN-06                      
+        181 Fleaur                    SH_CLERK   23-FEB-06                      
+        182 Sullivan                  SH_CLERK   21-JUN-07                      
+        183 Geoni                     SH_CLERK   03-FEB-08                      
+        184 Sarchand                  SH_CLERK   27-JAN-04                      
+        185 Bull                      SH_CLERK   20-FEB-05                      
+        186 Dellinger                 SH_CLERK   24-JUN-06                      
+        187 Cabrio                    SH_CLERK   07-FEB-07                      
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        188 Chung                     SH_CLERK   14-JUN-05                      
+        189 Dilly                     SH_CLERK   13-AUG-05                      
+        190 Gates                     SH_CLERK   11-JUL-06                      
+        191 Perkins                   SH_CLERK   19-DEC-07                      
+        192 Bell                      SH_CLERK   04-FEB-04                      
+        193 Everett                   SH_CLERK   03-MAR-05                      
+        194 McCain                    SH_CLERK   01-JUL-06                      
+        195 Jones                     SH_CLERK   17-MAR-07                      
+        196 Walsh                     SH_CLERK   24-APR-06                      
+        197 Feeney                    SH_CLERK   23-MAY-06                      
+        198 OConnell                  SH_CLERK   21-JUN-07                      
+
+EMPLOYEE_ID LAST_NAME                 JOB_ID     STARTDATE                      
+----------- ------------------------- ---------- ---------                      
+        199 Grant                     SH_CLERK   13-JAN-08                      
+        200 Whalen                    AD_ASST    17-SEP-03                      
+        201 Hartstein                 MK_MAN     17-FEB-04                      
+        202 Fay                       MK_REP     17-AUG-05                      
+        203 Mavris                    HR_REP     07-JUN-02                      
+        204 Baer                      PR_REP     07-JUN-02                      
+        205 Higgins                   AC_MGR     07-JUN-02                      
+        206 Gietz                     AC_ACCOUNT 07-JUN-02                      
+
+107 rows selected.
+
+SQL> spool off
+SQL> select distinct job_id
+  2  from employees;
+
+JOB_ID                                                                          
+----------                                                                      
+AC_ACCOUNT                                                                      
+AC_MGR                                                                          
+AD_ASST                                                                         
+AD_PRES                                                                         
+AD_VP                                                                           
+FI_ACCOUNT                                                                      
+FI_MGR                                                                          
+HR_REP                                                                          
+IT_PROG                                                                         
+MK_MAN                                                                          
+MK_REP                                                                          
+
+JOB_ID                                                                          
+----------                                                                      
+PR_REP                                                                          
+PU_CLERK                                                                        
+PU_MAN                                                                          
+SA_MAN                                                                          
+SA_REP                                                                          
+SH_CLERK                                                                        
+ST_CLERK                                                                        
+ST_MAN                                                                          
+
+19 rows selected.
+
+SQL> spool off
+SQL> select employee_id "EmP#", last_name "Employee", job_id "Job", hire_date "Hire Date"
+  2  from employees;
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       100 King                      AD_PRES    17-JUN-03                       
+       101 Kochhar                   AD_VP      21-SEP-05                       
+       102 De Haan                   AD_VP      13-JAN-01                       
+       103 Hunold                    IT_PROG    03-JAN-06                       
+       104 Ernst                     IT_PROG    21-MAY-07                       
+       105 Austin                    IT_PROG    25-JUN-05                       
+       106 Pataballa                 IT_PROG    05-FEB-06                       
+       107 Lorentz                   IT_PROG    07-FEB-07                       
+       108 Greenberg                 FI_MGR     17-AUG-02                       
+       109 Faviet                    FI_ACCOUNT 16-AUG-02                       
+       110 Chen                      FI_ACCOUNT 28-SEP-05                       
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       111 Sciarra                   FI_ACCOUNT 30-SEP-05                       
+       112 Urman                     FI_ACCOUNT 07-MAR-06                       
+       113 Popp                      FI_ACCOUNT 07-DEC-07                       
+       114 Raphaely                  PU_MAN     07-DEC-02                       
+       115 Khoo                      PU_CLERK   18-MAY-03                       
+       116 Baida                     PU_CLERK   24-DEC-05                       
+       117 Tobias                    PU_CLERK   24-JUL-05                       
+       118 Himuro                    PU_CLERK   15-NOV-06                       
+       119 Colmenares                PU_CLERK   10-AUG-07                       
+       120 Weiss                     ST_MAN     18-JUL-04                       
+       121 Fripp                     ST_MAN     10-APR-05                       
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       122 Kaufling                  ST_MAN     01-MAY-03                       
+       123 Vollman                   ST_MAN     10-OCT-05                       
+       124 Mourgos                   ST_MAN     16-NOV-07                       
+       125 Nayer                     ST_CLERK   16-JUL-05                       
+       126 Mikkilineni               ST_CLERK   28-SEP-06                       
+       127 Landry                    ST_CLERK   14-JAN-07                       
+       128 Markle                    ST_CLERK   08-MAR-08                       
+       129 Bissot                    ST_CLERK   20-AUG-05                       
+       130 Atkinson                  ST_CLERK   30-OCT-05                       
+       131 Marlow                    ST_CLERK   16-FEB-05                       
+       132 Olson                     ST_CLERK   10-APR-07                       
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       133 Mallin                    ST_CLERK   14-JUN-04                       
+       134 Rogers                    ST_CLERK   26-AUG-06                       
+       135 Gee                       ST_CLERK   12-DEC-07                       
+       136 Philtanker                ST_CLERK   06-FEB-08                       
+       137 Ladwig                    ST_CLERK   14-JUL-03                       
+       138 Stiles                    ST_CLERK   26-OCT-05                       
+       139 Seo                       ST_CLERK   12-FEB-06                       
+       140 Patel                     ST_CLERK   06-APR-06                       
+       141 Rajs                      ST_CLERK   17-OCT-03                       
+       142 Davies                    ST_CLERK   29-JAN-05                       
+       143 Matos                     ST_CLERK   15-MAR-06                       
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       144 Vargas                    ST_CLERK   09-JUL-06                       
+       145 Russell                   SA_MAN     01-OCT-04                       
+       146 Partners                  SA_MAN     05-JAN-05                       
+       147 Errazuriz                 SA_MAN     10-MAR-05                       
+       148 Cambrault                 SA_MAN     15-OCT-07                       
+       149 Zlotkey                   SA_MAN     29-JAN-08                       
+       150 Tucker                    SA_REP     30-JAN-05                       
+       151 Bernstein                 SA_REP     24-MAR-05                       
+       152 Hall                      SA_REP     20-AUG-05                       
+       153 Olsen                     SA_REP     30-MAR-06                       
+       154 Cambrault                 SA_REP     09-DEC-06                       
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       155 Tuvault                   SA_REP     23-NOV-07                       
+       156 King                      SA_REP     30-JAN-04                       
+       157 Sully                     SA_REP     04-MAR-04                       
+       158 McEwen                    SA_REP     01-AUG-04                       
+       159 Smith                     SA_REP     10-MAR-05                       
+       160 Doran                     SA_REP     15-DEC-05                       
+       161 Sewall                    SA_REP     03-NOV-06                       
+       162 Vishney                   SA_REP     11-NOV-05                       
+       163 Greene                    SA_REP     19-MAR-07                       
+       164 Marvins                   SA_REP     24-JAN-08                       
+       165 Lee                       SA_REP     23-FEB-08                       
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       166 Ande                      SA_REP     24-MAR-08                       
+       167 Banda                     SA_REP     21-APR-08                       
+       168 Ozer                      SA_REP     11-MAR-05                       
+       169 Bloom                     SA_REP     23-MAR-06                       
+       170 Fox                       SA_REP     24-JAN-06                       
+       171 Smith                     SA_REP     23-FEB-07                       
+       172 Bates                     SA_REP     24-MAR-07                       
+       173 Kumar                     SA_REP     21-APR-08                       
+       174 Abel                      SA_REP     11-MAY-04                       
+       175 Hutton                    SA_REP     19-MAR-05                       
+       176 Taylor                    SA_REP     24-MAR-06                       
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       177 Livingston                SA_REP     23-APR-06                       
+       178 Grant                     SA_REP     24-MAY-07                       
+       179 Johnson                   SA_REP     04-JAN-08                       
+       180 Taylor                    SH_CLERK   24-JAN-06                       
+       181 Fleaur                    SH_CLERK   23-FEB-06                       
+       182 Sullivan                  SH_CLERK   21-JUN-07                       
+       183 Geoni                     SH_CLERK   03-FEB-08                       
+       184 Sarchand                  SH_CLERK   27-JAN-04                       
+       185 Bull                      SH_CLERK   20-FEB-05                       
+       186 Dellinger                 SH_CLERK   24-JUN-06                       
+       187 Cabrio                    SH_CLERK   07-FEB-07                       
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       188 Chung                     SH_CLERK   14-JUN-05                       
+       189 Dilly                     SH_CLERK   13-AUG-05                       
+       190 Gates                     SH_CLERK   11-JUL-06                       
+       191 Perkins                   SH_CLERK   19-DEC-07                       
+       192 Bell                      SH_CLERK   04-FEB-04                       
+       193 Everett                   SH_CLERK   03-MAR-05                       
+       194 McCain                    SH_CLERK   01-JUL-06                       
+       195 Jones                     SH_CLERK   17-MAR-07                       
+       196 Walsh                     SH_CLERK   24-APR-06                       
+       197 Feeney                    SH_CLERK   23-MAY-06                       
+       198 OConnell                  SH_CLERK   21-JUN-07                       
+
+      EmP# Employee                  Job        Hire Date                       
+---------- ------------------------- ---------- ---------                       
+       199 Grant                     SH_CLERK   13-JAN-08                       
+       200 Whalen                    AD_ASST    17-SEP-03                       
+       201 Hartstein                 MK_MAN     17-FEB-04                       
+       202 Fay                       MK_REP     17-AUG-05                       
+       203 Mavris                    HR_REP     07-JUN-02                       
+       204 Baer                      PR_REP     07-JUN-02                       
+       205 Higgins                   AC_MGR     07-JUN-02                       
+       206 Gietz                     AC_ACCOUNT 07-JUN-02                       
+
+107 rows selected.
+
+SQL> spool off
+SQL> select last_name||', '||job_id "Employee and Title" from employees;
+
+Employee and Title                                                              
+-------------------------------------                                           
+Abel, SA_REP                                                                    
+Ande, SA_REP                                                                    
+Atkinson, ST_CLERK                                                              
+Austin, IT_PROG                                                                 
+Baer, PR_REP                                                                    
+Baida, PU_CLERK                                                                 
+Banda, SA_REP                                                                   
+Bates, SA_REP                                                                   
+Bell, SH_CLERK                                                                  
+Bernstein, SA_REP                                                               
+Bissot, ST_CLERK                                                                
+
+Employee and Title                                                              
+-------------------------------------                                           
+Bloom, SA_REP                                                                   
+Bull, SH_CLERK                                                                  
+Cabrio, SH_CLERK                                                                
+Cambrault, SA_MAN                                                               
+Cambrault, SA_REP                                                               
+Chen, FI_ACCOUNT                                                                
+Chung, SH_CLERK                                                                 
+Colmenares, PU_CLERK                                                            
+Davies, ST_CLERK                                                                
+De Haan, AD_VP                                                                  
+Dellinger, SH_CLERK                                                             
+
+Employee and Title                                                              
+-------------------------------------                                           
+Dilly, SH_CLERK                                                                 
+Doran, SA_REP                                                                   
+Ernst, IT_PROG                                                                  
+Errazuriz, SA_MAN                                                               
+Everett, SH_CLERK                                                               
+Faviet, FI_ACCOUNT                                                              
+Fay, MK_REP                                                                     
+Feeney, SH_CLERK                                                                
+Fleaur, SH_CLERK                                                                
+Fox, SA_REP                                                                     
+Fripp, ST_MAN                                                                   
+
+Employee and Title                                                              
+-------------------------------------                                           
+Gates, SH_CLERK                                                                 
+Gee, ST_CLERK                                                                   
+Geoni, SH_CLERK                                                                 
+Gietz, AC_ACCOUNT                                                               
+Grant, SH_CLERK                                                                 
+Grant, SA_REP                                                                   
+Greenberg, FI_MGR                                                               
+Greene, SA_REP                                                                  
+Hall, SA_REP                                                                    
+Hartstein, MK_MAN                                                               
+Higgins, AC_MGR                                                                 
+
+Employee and Title                                                              
+-------------------------------------                                           
+Himuro, PU_CLERK                                                                
+Hunold, IT_PROG                                                                 
+Hutton, SA_REP                                                                  
+Johnson, SA_REP                                                                 
+Jones, SH_CLERK                                                                 
+Kaufling, ST_MAN                                                                
+Khoo, PU_CLERK                                                                  
+King, SA_REP                                                                    
+King, AD_PRES                                                                   
+Kochhar, AD_VP                                                                  
+Kumar, SA_REP                                                                   
+
+Employee and Title                                                              
+-------------------------------------                                           
+Ladwig, ST_CLERK                                                                
+Landry, ST_CLERK                                                                
+Lee, SA_REP                                                                     
+Livingston, SA_REP                                                              
+Lorentz, IT_PROG                                                                
+Mallin, ST_CLERK                                                                
+Markle, ST_CLERK                                                                
+Marlow, ST_CLERK                                                                
+Marvins, SA_REP                                                                 
+Matos, ST_CLERK                                                                 
+Mavris, HR_REP                                                                  
+
+Employee and Title                                                              
+-------------------------------------                                           
+McCain, SH_CLERK                                                                
+McEwen, SA_REP                                                                  
+Mikkilineni, ST_CLERK                                                           
+Mourgos, ST_MAN                                                                 
+Nayer, ST_CLERK                                                                 
+OConnell, SH_CLERK                                                              
+Olsen, SA_REP                                                                   
+Olson, ST_CLERK                                                                 
+Ozer, SA_REP                                                                    
+Partners, SA_MAN                                                                
+Pataballa, IT_PROG                                                              
+
+Employee and Title                                                              
+-------------------------------------                                           
+Patel, ST_CLERK                                                                 
+Perkins, SH_CLERK                                                               
+Philtanker, ST_CLERK                                                            
+Popp, FI_ACCOUNT                                                                
+Rajs, ST_CLERK                                                                  
+Raphaely, PU_MAN                                                                
+Rogers, ST_CLERK                                                                
+Russell, SA_MAN                                                                 
+Sarchand, SH_CLERK                                                              
+Sciarra, FI_ACCOUNT                                                             
+Seo, ST_CLERK                                                                   
+
+Employee and Title                                                              
+-------------------------------------                                           
+Sewall, SA_REP                                                                  
+Smith, SA_REP                                                                   
+Smith, SA_REP                                                                   
+Stiles, ST_CLERK                                                                
+Sullivan, SH_CLERK                                                              
+Sully, SA_REP                                                                   
+Taylor, SA_REP                                                                  
+Taylor, SH_CLERK                                                                
+Tobias, PU_CLERK                                                                
+Tucker, SA_REP                                                                  
+Tuvault, SA_REP                                                                 
+
+Employee and Title                                                              
+-------------------------------------                                           
+Urman, FI_ACCOUNT                                                               
+Vargas, ST_CLERK                                                                
+Vishney, SA_REP                                                                 
+Vollman, ST_MAN                                                                 
+Walsh, SH_CLERK                                                                 
+Weiss, ST_MAN                                                                   
+Whalen, AD_ASST                                                                 
+Zlotkey, SA_MAN                                                                 
+
+107 rows selected.
+
+SQL> spool off
+
+
+ Exercise: Joins
+
+
+
+SQL> select location_id,street_address,city,state_province,country_name
+  2  from locations
+  3  natural join countries;
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+       1000 1297 Via Cola di Rie                                                
+Roma                                                                            
+Italy                                                                           
+                                                                                
+       1100 93091 Calle della Testa                                             
+Venice                                                                          
+Italy                                                                           
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+                                                                                
+       1200 2017 Shinjuku-ku                                                    
+Tokyo                          Tokyo Prefecture                                 
+Japan                                                                           
+                                                                                
+       1300 9450 Kamiya-cho                                                     
+Hiroshima                                                                       
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+Japan                                                                           
+                                                                                
+       1400 2014 Jabberwocky Rd                                                 
+Southlake                      Texas                                            
+United States of America                                                        
+                                                                                
+       1500 2011 Interiors Blvd                                                 
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+South San Francisco            California                                       
+United States of America                                                        
+                                                                                
+       1600 2007 Zagora St                                                      
+South Brunswick                New Jersey                                       
+United States of America                                                        
+                                                                                
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+       1700 2004 Charade Rd                                                     
+Seattle                        Washington                                       
+United States of America                                                        
+                                                                                
+       1800 147 Spadina Ave                                                     
+Toronto                        Ontario                                          
+Canada                                                                          
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+                                                                                
+       1900 6092 Boxwood St                                                     
+Whitehorse                     Yukon                                            
+Canada                                                                          
+                                                                                
+       2000 40-5-12 Laogianggen                                                 
+Beijing                                                                         
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+China                                                                           
+                                                                                
+       2100 1298 Vileparle (E)                                                  
+Bombay                         Maharashtra                                      
+India                                                                           
+                                                                                
+       2200 12-98 Victoria Street                                               
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+Sydney                         New South Wales                                  
+Australia                                                                       
+                                                                                
+       2300 198 Clementi North                                                  
+Singapore                                                                       
+Singapore                                                                       
+                                                                                
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+       2400 8204 Arthur St                                                      
+London                                                                          
+United Kingdom                                                                  
+                                                                                
+       2500 Magdalen Centre, The Oxford Science Park                            
+Oxford                         Oxford                                           
+United Kingdom                                                                  
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+                                                                                
+       2600 9702 Chester Road                                                   
+Stretford                      Manchester                                       
+United Kingdom                                                                  
+                                                                                
+       2700 Schwanthalerstr. 7031                                               
+Munich                         Bavaria                                          
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+Germany                                                                         
+                                                                                
+       2800 Rua Frei Caneca 1360                                                
+Sao Paulo                      Sao Paulo                                        
+Brazil                                                                          
+                                                                                
+       2900 20 Rue des Corps-Saints                                             
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+Geneva                         Geneve                                           
+Switzerland                                                                     
+                                                                                
+       3000 Murtenstrasse 921                                                   
+Bern                           BE                                               
+Switzerland                                                                     
+                                                                                
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+       3100 Pieter Breughelstraat 837                                           
+Utrecht                        Utrecht                                          
+Netherlands                                                                     
+                                                                                
+       3200 Mariano Escobedo 9991                                               
+Mexico City                    Distrito Federal,                                
+Mexico                                                                          
+
+LOCATION_ID STREET_ADDRESS                                                      
+----------- ----------------------------------------                            
+CITY                           STATE_PROVINCE                                   
+------------------------------ -------------------------                        
+COUNTRY_NAME                                                                    
+----------------------------------------                                        
+                                                                                
+
+23 rows selected.
+
+SQL> spool off
+
+SQL> SELECT e.last_name,e.job_id,e.department_id,d.department_name
+  2  FROM employees e JOIN departments d
+  3  ON (e.department_id = d.department_id)
+  4  JOIN locations l
+  5  ON (d.location_id = l.location_id)
+  6  WHERE LOWER (l.city) = 'toronto';
+
+LAST_NAME                 JOB_ID     DEPARTMENT_ID                              
+------------------------- ---------- -------------                              
+DEPARTMENT_NAME                                                                 
+------------------------------                                                  
+Hartstein                 MK_MAN                20                              
+Marketing                                                                       
+                                                                                
+Fay                       MK_REP                20                              
+Marketing                                                                       
+                                                                                
+
+SQL> spool off
+SQL> SElECT e.last_name, e,hire_name,m.hire_date
+  2  FROM employees w JOIN  employees m
+  3  ON (w.manager_id = m.employee_id)
+  4  WHERE w.hire_date < m.hire_date;
+SElECT e.last_name, e,hire_name,m.hire_date
+                      *
+ERROR at line 1:
+ORA-00904: "HIRE_NAME": invalid identifier 
+
+
+SQL> select * from tab;
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+COUNTRIES                      TABLE                                            
+DEPARTMENTS                    TABLE                                            
+EMPLOYEES                      TABLE                                            
+EMP_DETAILS_VIEW               VIEW                                             
+JOBS                           TABLE                                            
+JOB_HISTORY                    TABLE                                            
+LOCATIONS                      TABLE                                            
+REGIONS                        TABLE                                            
+
+8 rows selected.
+
+SQL> desc employees
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPLOYEE_ID                               NOT NULL NUMBER(6)
+ FIRST_NAME                                         VARCHAR2(20)
+ LAST_NAME                                 NOT NULL VARCHAR2(25)
+ EMAIL                                     NOT NULL VARCHAR2(25)
+ PHONE_NUMBER                                       VARCHAR2(20)
+ HIRE_DATE                                 NOT NULL DATE
+ JOB_ID                                    NOT NULL VARCHAR2(10)
+ SALARY                                             NUMBER(8,2)
+ COMMISSION_PCT                                     NUMBER(2,2)
+ MANAGER_ID                                         NUMBER(6)
+ DEPARTMENT_ID                                      NUMBER(4)
+
+
+
+SQL> SElECT w.last_name,m.hire_date
+  2  FROM employees w JOIN  employees m
+  3  ON (w.manager_id = m.employee_id)
+  4  WHERE w.hire_date < m.hire_date;
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+Kaufling                  17-JUN-03                                             
+Raphaely                  17-JUN-03                                             
+De Haan                   17-JUN-03                                             
+Higgins                   21-SEP-05                                             
+Baer                      21-SEP-05                                             
+Mavris                    21-SEP-05                                             
+Whalen                    21-SEP-05                                             
+Greenberg                 21-SEP-05                                             
+Austin                    03-JAN-06                                             
+Faviet                    17-AUG-02                                             
+Bull                      10-APR-05                                             
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+Sarchand                  10-APR-05                                             
+Marlow                    10-APR-05                                             
+Everett                   10-OCT-05                                             
+Bell                      10-OCT-05                                             
+Ladwig                    10-OCT-05                                             
+OConnell                  16-NOV-07                                             
+Feeney                    16-NOV-07                                             
+Walsh                     16-NOV-07                                             
+Vargas                    16-NOV-07                                             
+Matos                     16-NOV-07                                             
+Davies                    16-NOV-07                                             
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+Rajs                      16-NOV-07                                             
+McEwen                    05-JAN-05                                             
+Sully                     05-JAN-05                                             
+King                      05-JAN-05                                             
+Bates                     15-OCT-07                                             
+Smith                     15-OCT-07                                             
+Fox                       15-OCT-07                                             
+Bloom                     15-OCT-07                                             
+Ozer                      15-OCT-07                                             
+Johnson                   29-JAN-08                                             
+Grant                     29-JAN-08                                             
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+Livingston                29-JAN-08                                             
+Taylor                    29-JAN-08                                             
+Hutton                    29-JAN-08                                             
+Abel                      29-JAN-08                                             
+
+37 rows selected.
+
+
+
+
+   EXERCISE: SINGLE ROW FUNCTIONS
+
+
+SQL> SELECT sysdate "Date"
+  2  FROM   dual;
+
+Date                                                                            
+---------                                                                       
+27-DEC-19                                                                       
+
+SQL> SPOOL OFF
+SQL> SELECT employee_id, last_name, salary,
+  2         ROUND(salary * 1.155, 0) "New Salary"
+  3  FROM   employees;
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        100 King                           24000      27720                     
+        101 Kochhar                        17000      19635                     
+        102 De Haan                        17000      19635                     
+        103 Hunold                          9000      10395                     
+        104 Ernst                           6000       6930                     
+        105 Austin                          4800       5544                     
+        106 Pataballa                       4800       5544                     
+        107 Lorentz                         4200       4851                     
+        108 Greenberg                      12008      13869                     
+        109 Faviet                          9000      10395                     
+        110 Chen                            8200       9471                     
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        111 Sciarra                         7700       8894                     
+        112 Urman                           7800       9009                     
+        113 Popp                            6900       7970                     
+        114 Raphaely                       11000      12705                     
+        115 Khoo                            3100       3581                     
+        116 Baida                           2900       3350                     
+        117 Tobias                          2800       3234                     
+        118 Himuro                          2600       3003                     
+        119 Colmenares                      2500       2888                     
+        120 Weiss                           8000       9240                     
+        121 Fripp                           8200       9471                     
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        122 Kaufling                        7900       9125                     
+        123 Vollman                         6500       7508                     
+        124 Mourgos                         5800       6699                     
+        125 Nayer                           3200       3696                     
+        126 Mikkilineni                     2700       3119                     
+        127 Landry                          2400       2772                     
+        128 Markle                          2200       2541                     
+        129 Bissot                          3300       3812                     
+        130 Atkinson                        2800       3234                     
+        131 Marlow                          2500       2888                     
+        132 Olson                           2100       2426                     
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        133 Mallin                          3300       3812                     
+        134 Rogers                          2900       3350                     
+        135 Gee                             2400       2772                     
+        136 Philtanker                      2200       2541                     
+        137 Ladwig                          3600       4158                     
+        138 Stiles                          3200       3696                     
+        139 Seo                             2700       3119                     
+        140 Patel                           2500       2888                     
+        141 Rajs                            3500       4043                     
+        142 Davies                          3100       3581                     
+        143 Matos                           2600       3003                     
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        144 Vargas                          2500       2888                     
+        145 Russell                        14000      16170                     
+        146 Partners                       13500      15593                     
+        147 Errazuriz                      12000      13860                     
+        148 Cambrault                      11000      12705                     
+        149 Zlotkey                        10500      12128                     
+        150 Tucker                         10000      11550                     
+        151 Bernstein                       9500      10973                     
+        152 Hall                            9000      10395                     
+        153 Olsen                           8000       9240                     
+        154 Cambrault                       7500       8663                     
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        155 Tuvault                         7000       8085                     
+        156 King                           10000      11550                     
+        157 Sully                           9500      10973                     
+        158 McEwen                          9000      10395                     
+        159 Smith                           8000       9240                     
+        160 Doran                           7500       8663                     
+        161 Sewall                          7000       8085                     
+        162 Vishney                        10500      12128                     
+        163 Greene                          9500      10973                     
+        164 Marvins                         7200       8316                     
+        165 Lee                             6800       7854                     
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        166 Ande                            6400       7392                     
+        167 Banda                           6200       7161                     
+        168 Ozer                           11500      13283                     
+        169 Bloom                          10000      11550                     
+        170 Fox                             9600      11088                     
+        171 Smith                           7400       8547                     
+        172 Bates                           7300       8432                     
+        173 Kumar                           6100       7046                     
+        174 Abel                           11000      12705                     
+        175 Hutton                          8800      10164                     
+        176 Taylor                          8600       9933                     
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        177 Livingston                      8400       9702                     
+        178 Grant                           7000       8085                     
+        179 Johnson                         6200       7161                     
+        180 Taylor                          3200       3696                     
+        181 Fleaur                          3100       3581                     
+        182 Sullivan                        2500       2888                     
+        183 Geoni                           2800       3234                     
+        184 Sarchand                        4200       4851                     
+        185 Bull                            4100       4736                     
+        186 Dellinger                       3400       3927                     
+        187 Cabrio                          3000       3465                     
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        188 Chung                           3800       4389                     
+        189 Dilly                           3600       4158                     
+        190 Gates                           2900       3350                     
+        191 Perkins                         2500       2888                     
+        192 Bell                            4000       4620                     
+        193 Everett                         3900       4505                     
+        194 McCain                          3200       3696                     
+        195 Jones                           2800       3234                     
+        196 Walsh                           3100       3581                     
+        197 Feeney                          3000       3465                     
+        198 OConnell                        2600       3003                     
+
+EMPLOYEE_ID LAST_NAME                     SALARY New Salary                     
+----------- ------------------------- ---------- ----------                     
+        199 Grant                           2600       3003                     
+        200 Whalen                          4400       5082                     
+        201 Hartstein                      13000      15015                     
+        202 Fay                             6000       6930                     
+        203 Mavris                          6500       7508                     
+        204 Baer                           10000      11550                     
+        205 Higgins                        12008      13869                     
+        206 Gietz                           8300       9587                     
+
+107 rows selected.
+
+SQL> SPOOL OFF
+SQL> SELECT employee_id, last_name, salary,
+  2         ROUND(salary * 1.155, 0) "New Salary"
+  3         ROUND(salary * 1.155, 0) - salary "Increase"
+  4  FROM   employees;
+       ROUND(salary * 1.155, 0) - salary "Increase"
+       *
+ERROR at line 3:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> DECLARE
+  2  f_name VARCHAR(20);
+  3  
+  4  BEGIN
+  5  SELECT first_name INTO f_name FROM employees WHERE
+  6  employee_id=100;
+  7  END;
+  8  /
+
+PL/SQL procedure successfully completed.
+
+SQL> SET SERVEROUTPUT ON
+SQL> DECLARE
+  2  f_name VARCHAR(20);
+  3  
+  4  BEGIN
+  5  SELECT first_name INTO f_name FROM employees WHERE
+  6  employee_id=100;
+  7  DBMS_OUTPUT.PUT_LINE('The first name of the employee is' || f_name);
+  8  END;
+  9  /
+The first name of the employee isSteven                                         
+
+PL/SQL procedure successfully completed.
+
+SQL> SET SERVEROUTPUT ON
+SQL> DECLARE
+  2     event VARCHAR(15);
+  3  BEGIN
+  4     event := q'!Father's day!';
+  5     DBMS_OUTPUT.PUT_LINE('3rd sunday is june is :'|| event);
+  6     event :=q'[mother's day]';
+  7     DBMS_OUTPUT.PUT_LINE('2ND SUNDAY IN MAY IS :' EVENT);
+  8  END;
+  9  /
+   DBMS_OUTPUT.PUT_LINE('2ND SUNDAY IN MAY IS :' EVENT);
+                                                 *
+ERROR at line 7:
+ORA-06550: line 7, column 50: 
+PLS-00103: Encountered the symbol "EVENT" when expecting one of the following: 
+) , * & = - + < / > at in is mod remainder not rem => 
+<an exponent (**)> <> or != or ~= >= <= <> and or like like2 
+like4 likec as between from using || multiset member 
+submultiset 
+The symbol "," was substituted for "EVENT" to continue. 
+
+
+SQL> 
+SQL> SET SERVEROUTPUT ON
+SQL> DECLARE
+  2     event VARCHAR(15);
+  3  BEGIN
+  4     event := q'!Father's day!';
+  5     DBMS_OUTPUT.PUT_LINE('3rd sunday is june is :'|| event);
+  6     event :=q'[mother's day]';
+  7     DBMS_OUTPUT.PUT_LINE('2ND SUNDAY IN MAY IS :'|| EVENT);
+  8  END;
+  9  /
+3rd sunday is june is :Father's day                                             
+2ND SUNDAY IN MAY IS :mother's day                                              
+
+PL/SQL procedure successfully completed.
+
+SQL> HOST
+
+SQL> SET VERIFY OFF
+SQL> DEFINE lname=GRANT
+SQL> DECLARE
+  2      fname VARCHAR(25);
+  3  BEGIN
+  4      SELECT first_name INTO fname FROM employees
+  5      WHERE last_name='&lname';
+  6  END;
+  7  /
+DECLARE
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 4 
+
+
+SQL> SET VERIFY OFF
+SQL> DEFINE lname= URMAN
+SQL> DECLARE
+  2      fname VARCHAR(25);
+  3  BEGIN
+  4      SELECT first_name INTO fname FROM employees
+  5      WHERE last_name='&lname';
+  6  END;
+  7  /
+DECLARE
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 4 
+
+
+SQL> SET AUTOPRINT ON
+SQL> SET VERIFY OFF
+SQL> DEFINE lname= URMAN
+SQL> DECLARE
+  2      fname VARCHAR(25);
+  3  BEGIN
+  4      SELECT first_name INTO fname FROM employees
+  5      WHERE last_name='&lname';
+  6  END;
+  7  /
+DECLARE
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 4 
+
+
+SQL> UNDEFINED LNAME
+SP2-0734: unknown command beginning "UNDEFINED ..." - rest of line ignored.
+SQL> UNDEFINED LNAME
+SP2-0734: unknown command beginning "UNDEFINED ..." - rest of line ignored.
+SQL> UNDEFINED LNAMESET AUTOPRINT ON
+SP2-0734: unknown command beginning "UNDEFINED ..." - rest of line ignored.
+SQL> SET VERIFY OFF
+SQL> DEFINE lname= URMAN
+SQL> DECLARE
+  2      fname VARCHAR(25);
+  3  BEGIN
+  4      SELECT first_name INTO fname FROM employees
+  5      WHERE last_name='&lname';
+  6  END;
+  7  /
+DECLARE
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 4 
+
+
+SQL> 
+SQL> 
+SQL> UNDEFINED LNAME
+SP2-0734: unknown command beginning "UNDEFINED ..." - rest of line ignored.
+SQL> SET AUTOPRINT ON
+SQL> SET VERIFY OFF
+SQL> DEFINE lname= URMAN
+SQL> DECLARE
+  2      fname VARCHAR(25);
+  3  BEGIN
+  4      SELECT first_name INTO fname FROM employees
+  5      WHERE last_name='&lname';
+  6  END;
+  7  /
+DECLARE
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 4 
+
+
+SQL> spool d://sqllab3.txt append
+SQL> SELECT   INITCAP(lastname), LENGTH(last_name)
+  2  FROM     employees
+  3  WHERE    SUBSTR(last_name, 0, 1) IN ('J','M','A')
+  4  ORDER BY last_name;
+SELECT   INITCAP(lastname), LENGTH(last_name)
+                 *
+ERROR at line 1:
+ORA-00904: "LASTNAME": invalid identifier 
+
+
+SQL> SELECT   INITCAP(last_name), LENGTH(last_name)
+  2  FROM     employees
+  3  WHERE    SUBSTR(last_name, 0, 1) IN ('J','M','A')
+  4  ORDER BY last_name;
+
+INITCAP(LAST_NAME)        LENGTH(LAST_NAME)                                     
+------------------------- -----------------                                     
+Abel                                      4                                     
+Ande                                      4                                     
+Atkinson                                  8                                     
+Austin                                    6                                     
+Johnson                                   7                                     
+Jones                                     5                                     
+Mallin                                    6                                     
+Markle                                    6                                     
+Marlow                                    6                                     
+Marvins                                   7                                     
+Matos                                     5                                     
+
+INITCAP(LAST_NAME)        LENGTH(LAST_NAME)                                     
+------------------------- -----------------                                     
+Mavris                                    6                                     
+Mccain                                    6                                     
+Mcewen                                    6                                     
+Mikkilineni                              11                                     
+Mourgos                                   7                                     
+
+16 rows selected.
+
+SQL> spool off
+SQL> SELECT   INITCAP(last_name), LENGTH(last_name)
+  2  FROM     employees
+  3  WHERE    SUBSTR(last_name, 0, 1) IN ('J','M','A')
+  4  ORDER BY last_name;
+
+INITCAP(LAST_NAME)        LENGTH(LAST_NAME)                                     
+------------------------- -----------------                                     
+Abel                                      4                                     
+Ande                                      4                                     
+Atkinson                                  8                                     
+Austin                                    6                                     
+Johnson                                   7                                     
+Jones                                     5                                     
+Mallin                                    6                                     
+Markle                                    6                                     
+Marlow                                    6                                     
+Marvins                                   7                                     
+Matos                                     5                                     
+
+INITCAP(LAST_NAME)        LENGTH(LAST_NAME)                                     
+------------------------- -----------------                                     
+Mavris                                    6                                     
+Mccain                                    6                                     
+Mcewen                                    6                                     
+Mikkilineni                              11                                     
+Mourgos                                   7                                     
+
+16 rows selected.
+
+SQL> spool off
+SQL> SELECT   INITCAP(last_name), LENGTH(last_name)
+  2  FROM     employees
+  3  WHERE    last_name LIKE '&start_letter%'
+  4  ORDER BY last_name;
+Enter value for start_letter: D
+
+INITCAP(LAST_NAME)        LENGTH(LAST_NAME)                                     
+------------------------- -----------------                                     
+Davies                                    6                                     
+De Haan                                   7                                     
+Dellinger                                 9                                     
+Dilly                                     5                                     
+Doran                                     5                                     
+
+SQL> SPOOL OFF
+SQL> SELECT   last_name, ROUND(MONTHS_BETWEEN(SYSDATE, hire_date))
+  2  FROM     employees
+  3  ORDER BY 2;
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Banda                                                          140              
+Kumar                                                          140              
+Ande                                                           141              
+Markle                                                         142              
+Lee                                                            142              
+Philtanker                                                     143              
+Zlotkey                                                        143              
+Marvins                                                        143              
+Geoni                                                          143              
+Grant                                                          143              
+Johnson                                                        144              
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Perkins                                                        144              
+Popp                                                           145              
+Mourgos                                                        145              
+Gee                                                            145              
+Tuvault                                                        145              
+Cambrault                                                      146              
+Colmenares                                                     149              
+Sullivan                                                       150              
+OConnell                                                       150              
+Ernst                                                          151              
+Grant                                                          151              
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Olson                                                          153              
+Greene                                                         153              
+Bates                                                          153              
+Jones                                                          153              
+Smith                                                          154              
+Lorentz                                                        155              
+Landry                                                         155              
+Cabrio                                                         155              
+Himuro                                                         157              
+Cambrault                                                      157              
+Sewall                                                         158              
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Mikkilineni                                                    159              
+Rogers                                                         160              
+Vargas                                                         162              
+Dellinger                                                      162              
+Gates                                                          162              
+McCain                                                         162              
+Feeney                                                         163              
+Livingston                                                     164              
+Walsh                                                          164              
+Patel                                                          165              
+Matos                                                          165              
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Olsen                                                          165              
+Bloom                                                          165              
+Taylor                                                         165              
+Urman                                                          166              
+Fleaur                                                         166              
+Pataballa                                                      167              
+Seo                                                            167              
+Fox                                                            167              
+Taylor                                                         167              
+Hunold                                                         168              
+Baida                                                          168              
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Doran                                                          168              
+Atkinson                                                       170              
+Stiles                                                         170              
+Vishney                                                        170              
+Kochhar                                                        171              
+Chen                                                           171              
+Sciarra                                                        171              
+Vollman                                                        171              
+Bissot                                                         172              
+Hall                                                           172              
+Dilly                                                          172              
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Fay                                                            172              
+Tobias                                                         173              
+Nayer                                                          173              
+Austin                                                         174              
+Chung                                                          174              
+Fripp                                                          177              
+Bernstein                                                      177              
+Hutton                                                         177              
+Marlow                                                         178              
+Errazuriz                                                      178              
+Smith                                                          178              
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Ozer                                                           178              
+Bull                                                           178              
+Everett                                                        178              
+Davies                                                         179              
+Tucker                                                         179              
+Partners                                                       180              
+Russell                                                        183              
+Weiss                                                          185              
+McEwen                                                         185              
+Mallin                                                         186              
+Abel                                                           188              
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Sully                                                          190              
+Hartstein                                                      190              
+King                                                           191              
+Sarchand                                                       191              
+Bell                                                           191              
+Rajs                                                           194              
+Whalen                                                         195              
+Ladwig                                                         197              
+King                                                           198              
+Khoo                                                           199              
+Kaufling                                                       200              
+
+LAST_NAME                 ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE))              
+------------------------- ----------------------------------------              
+Raphaely                                                       205              
+Faviet                                                         208              
+Greenberg                                                      208              
+Gietz                                                          211              
+Mavris                                                         211              
+Baer                                                           211              
+Higgins                                                        211              
+De Haan                                                        227              
+
+107 rows selected.
+
+SQL> SELECT last_name ||' earns '|| TO_CHAR(salary, 'fm$99,999.00')
+  2         || ' monthly but wants '|| TO_CHAR(salary * 3, 'fm$99,999.00')
+  3  FROM   employees;
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+King earns $24,000.00 monthly but wants $72,000.00                              
+Kochhar earns $17,000.00 monthly but wants $51,000.00                           
+De Haan earns $17,000.00 monthly but wants $51,000.00                           
+Hunold earns $9,000.00 monthly but wants $27,000.00                             
+Ernst earns $6,000.00 monthly but wants $18,000.00                              
+Austin earns $4,800.00 monthly but wants $14,400.00                             
+Pataballa earns $4,800.00 monthly but wants $14,400.00                          
+Lorentz earns $4,200.00 monthly but wants $12,600.00                            
+Greenberg earns $12,008.00 monthly but wants $36,024.00                         
+Faviet earns $9,000.00 monthly but wants $27,000.00                             
+Chen earns $8,200.00 monthly but wants $24,600.00                               
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+Sciarra earns $7,700.00 monthly but wants $23,100.00                            
+Urman earns $7,800.00 monthly but wants $23,400.00                              
+Popp earns $6,900.00 monthly but wants $20,700.00                               
+Raphaely earns $11,000.00 monthly but wants $33,000.00                          
+Khoo earns $3,100.00 monthly but wants $9,300.00                                
+Baida earns $2,900.00 monthly but wants $8,700.00                               
+Tobias earns $2,800.00 monthly but wants $8,400.00                              
+Himuro earns $2,600.00 monthly but wants $7,800.00                              
+Colmenares earns $2,500.00 monthly but wants $7,500.00                          
+Weiss earns $8,000.00 monthly but wants $24,000.00                              
+Fripp earns $8,200.00 monthly but wants $24,600.00                              
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+Kaufling earns $7,900.00 monthly but wants $23,700.00                           
+Vollman earns $6,500.00 monthly but wants $19,500.00                            
+Mourgos earns $5,800.00 monthly but wants $17,400.00                            
+Nayer earns $3,200.00 monthly but wants $9,600.00                               
+Mikkilineni earns $2,700.00 monthly but wants $8,100.00                         
+Landry earns $2,400.00 monthly but wants $7,200.00                              
+Markle earns $2,200.00 monthly but wants $6,600.00                              
+Bissot earns $3,300.00 monthly but wants $9,900.00                              
+Atkinson earns $2,800.00 monthly but wants $8,400.00                            
+Marlow earns $2,500.00 monthly but wants $7,500.00                              
+Olson earns $2,100.00 monthly but wants $6,300.00                               
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+Mallin earns $3,300.00 monthly but wants $9,900.00                              
+Rogers earns $2,900.00 monthly but wants $8,700.00                              
+Gee earns $2,400.00 monthly but wants $7,200.00                                 
+Philtanker earns $2,200.00 monthly but wants $6,600.00                          
+Ladwig earns $3,600.00 monthly but wants $10,800.00                             
+Stiles earns $3,200.00 monthly but wants $9,600.00                              
+Seo earns $2,700.00 monthly but wants $8,100.00                                 
+Patel earns $2,500.00 monthly but wants $7,500.00                               
+Rajs earns $3,500.00 monthly but wants $10,500.00                               
+Davies earns $3,100.00 monthly but wants $9,300.00                              
+Matos earns $2,600.00 monthly but wants $7,800.00                               
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+Vargas earns $2,500.00 monthly but wants $7,500.00                              
+Russell earns $14,000.00 monthly but wants $42,000.00                           
+Partners earns $13,500.00 monthly but wants $40,500.00                          
+Errazuriz earns $12,000.00 monthly but wants $36,000.00                         
+Cambrault earns $11,000.00 monthly but wants $33,000.00                         
+Zlotkey earns $10,500.00 monthly but wants $31,500.00                           
+Tucker earns $10,000.00 monthly but wants $30,000.00                            
+Bernstein earns $9,500.00 monthly but wants $28,500.00                          
+Hall earns $9,000.00 monthly but wants $27,000.00                               
+Olsen earns $8,000.00 monthly but wants $24,000.00                              
+Cambrault earns $7,500.00 monthly but wants $22,500.00                          
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+Tuvault earns $7,000.00 monthly but wants $21,000.00                            
+King earns $10,000.00 monthly but wants $30,000.00                              
+Sully earns $9,500.00 monthly but wants $28,500.00                              
+McEwen earns $9,000.00 monthly but wants $27,000.00                             
+Smith earns $8,000.00 monthly but wants $24,000.00                              
+Doran earns $7,500.00 monthly but wants $22,500.00                              
+Sewall earns $7,000.00 monthly but wants $21,000.00                             
+Vishney earns $10,500.00 monthly but wants $31,500.00                           
+Greene earns $9,500.00 monthly but wants $28,500.00                             
+Marvins earns $7,200.00 monthly but wants $21,600.00                            
+Lee earns $6,800.00 monthly but wants $20,400.00                                
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+Ande earns $6,400.00 monthly but wants $19,200.00                               
+Banda earns $6,200.00 monthly but wants $18,600.00                              
+Ozer earns $11,500.00 monthly but wants $34,500.00                              
+Bloom earns $10,000.00 monthly but wants $30,000.00                             
+Fox earns $9,600.00 monthly but wants $28,800.00                                
+Smith earns $7,400.00 monthly but wants $22,200.00                              
+Bates earns $7,300.00 monthly but wants $21,900.00                              
+Kumar earns $6,100.00 monthly but wants $18,300.00                              
+Abel earns $11,000.00 monthly but wants $33,000.00                              
+Hutton earns $8,800.00 monthly but wants $26,400.00                             
+Taylor earns $8,600.00 monthly but wants $25,800.00                             
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+Livingston earns $8,400.00 monthly but wants $25,200.00                         
+Grant earns $7,000.00 monthly but wants $21,000.00                              
+Johnson earns $6,200.00 monthly but wants $18,600.00                            
+Taylor earns $3,200.00 monthly but wants $9,600.00                              
+Fleaur earns $3,100.00 monthly but wants $9,300.00                              
+Sullivan earns $2,500.00 monthly but wants $7,500.00                            
+Geoni earns $2,800.00 monthly but wants $8,400.00                               
+Sarchand earns $4,200.00 monthly but wants $12,600.00                           
+Bull earns $4,100.00 monthly but wants $12,300.00                               
+Dellinger earns $3,400.00 monthly but wants $10,200.00                          
+Cabrio earns $3,000.00 monthly but wants $9,000.00                              
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+Chung earns $3,800.00 monthly but wants $11,400.00                              
+Dilly earns $3,600.00 monthly but wants $10,800.00                              
+Gates earns $2,900.00 monthly but wants $8,700.00                               
+Perkins earns $2,500.00 monthly but wants $7,500.00                             
+Bell earns $4,000.00 monthly but wants $12,000.00                               
+Everett earns $3,900.00 monthly but wants $11,700.00                            
+McCain earns $3,200.00 monthly but wants $9,600.00                              
+Jones earns $2,800.00 monthly but wants $8,400.00                               
+Walsh earns $3,100.00 monthly but wants $9,300.00                               
+Feeney earns $3,000.00 monthly but wants $9,000.00                              
+OConnell earns $2,600.00 monthly but wants $7,800.00                            
+
+LAST_NAME||'EARNS'||TO_CHAR(SALARY,'FM$99,999.00')||'MONTHLYBUTWANTS'||TO       
+-------------------------------------------------------------------------       
+Grant earns $2,600.00 monthly but wants $7,800.00                               
+Whalen earns $4,400.00 monthly but wants $13,200.00                             
+Hartstein earns $13,000.00 monthly but wants $39,000.00                         
+Fay earns $6,000.00 monthly but wants $18,000.00                                
+Mavris earns $6,500.00 monthly but wants $19,500.00                             
+Baer earns $10,000.00 monthly but wants $30,000.00                              
+Higgins earns $12,008.00 monthly but wants $36,024.00                           
+Gietz earns $8,300.00 monthly but wants $24,900.00                              
+
+107 rows selected.
+
+SQL> SELECT last_name, LPAD(salary, 15, '$') SALARY
+  2  FROM   employees;
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+King                      $$$$$$$$$$24000                                       
+Kochhar                   $$$$$$$$$$17000                                       
+De Haan                   $$$$$$$$$$17000                                       
+Hunold                    $$$$$$$$$$$9000                                       
+Ernst                     $$$$$$$$$$$6000                                       
+Austin                    $$$$$$$$$$$4800                                       
+Pataballa                 $$$$$$$$$$$4800                                       
+Lorentz                   $$$$$$$$$$$4200                                       
+Greenberg                 $$$$$$$$$$12008                                       
+Faviet                    $$$$$$$$$$$9000                                       
+Chen                      $$$$$$$$$$$8200                                       
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+Sciarra                   $$$$$$$$$$$7700                                       
+Urman                     $$$$$$$$$$$7800                                       
+Popp                      $$$$$$$$$$$6900                                       
+Raphaely                  $$$$$$$$$$11000                                       
+Khoo                      $$$$$$$$$$$3100                                       
+Baida                     $$$$$$$$$$$2900                                       
+Tobias                    $$$$$$$$$$$2800                                       
+Himuro                    $$$$$$$$$$$2600                                       
+Colmenares                $$$$$$$$$$$2500                                       
+Weiss                     $$$$$$$$$$$8000                                       
+Fripp                     $$$$$$$$$$$8200                                       
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+Kaufling                  $$$$$$$$$$$7900                                       
+Vollman                   $$$$$$$$$$$6500                                       
+Mourgos                   $$$$$$$$$$$5800                                       
+Nayer                     $$$$$$$$$$$3200                                       
+Mikkilineni               $$$$$$$$$$$2700                                       
+Landry                    $$$$$$$$$$$2400                                       
+Markle                    $$$$$$$$$$$2200                                       
+Bissot                    $$$$$$$$$$$3300                                       
+Atkinson                  $$$$$$$$$$$2800                                       
+Marlow                    $$$$$$$$$$$2500                                       
+Olson                     $$$$$$$$$$$2100                                       
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+Mallin                    $$$$$$$$$$$3300                                       
+Rogers                    $$$$$$$$$$$2900                                       
+Gee                       $$$$$$$$$$$2400                                       
+Philtanker                $$$$$$$$$$$2200                                       
+Ladwig                    $$$$$$$$$$$3600                                       
+Stiles                    $$$$$$$$$$$3200                                       
+Seo                       $$$$$$$$$$$2700                                       
+Patel                     $$$$$$$$$$$2500                                       
+Rajs                      $$$$$$$$$$$3500                                       
+Davies                    $$$$$$$$$$$3100                                       
+Matos                     $$$$$$$$$$$2600                                       
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+Vargas                    $$$$$$$$$$$2500                                       
+Russell                   $$$$$$$$$$14000                                       
+Partners                  $$$$$$$$$$13500                                       
+Errazuriz                 $$$$$$$$$$12000                                       
+Cambrault                 $$$$$$$$$$11000                                       
+Zlotkey                   $$$$$$$$$$10500                                       
+Tucker                    $$$$$$$$$$10000                                       
+Bernstein                 $$$$$$$$$$$9500                                       
+Hall                      $$$$$$$$$$$9000                                       
+Olsen                     $$$$$$$$$$$8000                                       
+Cambrault                 $$$$$$$$$$$7500                                       
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+Tuvault                   $$$$$$$$$$$7000                                       
+King                      $$$$$$$$$$10000                                       
+Sully                     $$$$$$$$$$$9500                                       
+McEwen                    $$$$$$$$$$$9000                                       
+Smith                     $$$$$$$$$$$8000                                       
+Doran                     $$$$$$$$$$$7500                                       
+Sewall                    $$$$$$$$$$$7000                                       
+Vishney                   $$$$$$$$$$10500                                       
+Greene                    $$$$$$$$$$$9500                                       
+Marvins                   $$$$$$$$$$$7200                                       
+Lee                       $$$$$$$$$$$6800                                       
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+Ande                      $$$$$$$$$$$6400                                       
+Banda                     $$$$$$$$$$$6200                                       
+Ozer                      $$$$$$$$$$11500                                       
+Bloom                     $$$$$$$$$$10000                                       
+Fox                       $$$$$$$$$$$9600                                       
+Smith                     $$$$$$$$$$$7400                                       
+Bates                     $$$$$$$$$$$7300                                       
+Kumar                     $$$$$$$$$$$6100                                       
+Abel                      $$$$$$$$$$11000                                       
+Hutton                    $$$$$$$$$$$8800                                       
+Taylor                    $$$$$$$$$$$8600                                       
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+Livingston                $$$$$$$$$$$8400                                       
+Grant                     $$$$$$$$$$$7000                                       
+Johnson                   $$$$$$$$$$$6200                                       
+Taylor                    $$$$$$$$$$$3200                                       
+Fleaur                    $$$$$$$$$$$3100                                       
+Sullivan                  $$$$$$$$$$$2500                                       
+Geoni                     $$$$$$$$$$$2800                                       
+Sarchand                  $$$$$$$$$$$4200                                       
+Bull                      $$$$$$$$$$$4100                                       
+Dellinger                 $$$$$$$$$$$3400                                       
+Cabrio                    $$$$$$$$$$$3000                                       
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+Chung                     $$$$$$$$$$$3800                                       
+Dilly                     $$$$$$$$$$$3600                                       
+Gates                     $$$$$$$$$$$2900                                       
+Perkins                   $$$$$$$$$$$2500                                       
+Bell                      $$$$$$$$$$$4000                                       
+Everett                   $$$$$$$$$$$3900                                       
+McCain                    $$$$$$$$$$$3200                                       
+Jones                     $$$$$$$$$$$2800                                       
+Walsh                     $$$$$$$$$$$3100                                       
+Feeney                    $$$$$$$$$$$3000                                       
+OConnell                  $$$$$$$$$$$2600                                       
+
+LAST_NAME                 SALARY                                                
+------------------------- ---------------                                       
+Grant                     $$$$$$$$$$$2600                                       
+Whalen                    $$$$$$$$$$$4400                                       
+Hartstein                 $$$$$$$$$$13000                                       
+Fay                       $$$$$$$$$$$6000                                       
+Mavris                    $$$$$$$$$$$6500                                       
+Baer                      $$$$$$$$$$10000                                       
+Higgins                   $$$$$$$$$$12008                                       
+Gietz                     $$$$$$$$$$$8300                                       
+
+107 rows selected.
+
+SQL> SELECT last_name, hire_date,
+  2         TO_CHAR(NEXT_DAY(ADD_MONTHS(hire_date, 6),'MONDAY'),
+  3         'fmDay, "the" Ddspth "of" Month, YYYY') REVIEW
+  4  FROM   employees;
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+King                      17-JUN-03                                             
+Monday, the Twenty-Second of December, 2003                                     
+                                                                                
+Kochhar                   21-SEP-05                                             
+Monday, the Twenty-Seventh of March, 2006                                       
+                                                                                
+De Haan                   13-JAN-01                                             
+Monday, the Sixteenth of July, 2001                                             
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Hunold                    03-JAN-06                                             
+Monday, the Tenth of July, 2006                                                 
+                                                                                
+Ernst                     21-MAY-07                                             
+Monday, the Twenty-Sixth of November, 2007                                      
+                                                                                
+Austin                    25-JUN-05                                             
+Monday, the Twenty-Sixth of December, 2005                                      
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Pataballa                 05-FEB-06                                             
+Monday, the Seventh of August, 2006                                             
+                                                                                
+Lorentz                   07-FEB-07                                             
+Monday, the Thirteenth of August, 2007                                          
+                                                                                
+Greenberg                 17-AUG-02                                             
+Monday, the Twenty-Fourth of February, 2003                                     
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Faviet                    16-AUG-02                                             
+Monday, the Seventeenth of February, 2003                                       
+                                                                                
+Chen                      28-SEP-05                                             
+Monday, the Third of April, 2006                                                
+                                                                                
+Sciarra                   30-SEP-05                                             
+Monday, the Third of April, 2006                                                
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Urman                     07-MAR-06                                             
+Monday, the Eleventh of September, 2006                                         
+                                                                                
+Popp                      07-DEC-07                                             
+Monday, the Ninth of June, 2008                                                 
+                                                                                
+Raphaely                  07-DEC-02                                             
+Monday, the Ninth of June, 2003                                                 
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Khoo                      18-MAY-03                                             
+Monday, the Twenty-Fourth of November, 2003                                     
+                                                                                
+Baida                     24-DEC-05                                             
+Monday, the Twenty-Sixth of June, 2006                                          
+                                                                                
+Tobias                    24-JUL-05                                             
+Monday, the Thirtieth of January, 2006                                          
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Himuro                    15-NOV-06                                             
+Monday, the Twenty-First of May, 2007                                           
+                                                                                
+Colmenares                10-AUG-07                                             
+Monday, the Eleventh of February, 2008                                          
+                                                                                
+Weiss                     18-JUL-04                                             
+Monday, the Twenty-Fourth of January, 2005                                      
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Fripp                     10-APR-05                                             
+Monday, the Seventeenth of October, 2005                                        
+                                                                                
+Kaufling                  01-MAY-03                                             
+Monday, the Third of November, 2003                                             
+                                                                                
+Vollman                   10-OCT-05                                             
+Monday, the Seventeenth of April, 2006                                          
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Mourgos                   16-NOV-07                                             
+Monday, the Nineteenth of May, 2008                                             
+                                                                                
+Nayer                     16-JUL-05                                             
+Monday, the Twenty-Third of January, 2006                                       
+                                                                                
+Mikkilineni               28-SEP-06                                             
+Monday, the Second of April, 2007                                               
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Landry                    14-JAN-07                                             
+Monday, the Sixteenth of July, 2007                                             
+                                                                                
+Markle                    08-MAR-08                                             
+Monday, the Fifteenth of September, 2008                                        
+                                                                                
+Bissot                    20-AUG-05                                             
+Monday, the Twenty-Seventh of February, 2006                                    
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Atkinson                  30-OCT-05                                             
+Monday, the First of May, 2006                                                  
+                                                                                
+Marlow                    16-FEB-05                                             
+Monday, the Twenty-Second of August, 2005                                       
+                                                                                
+Olson                     10-APR-07                                             
+Monday, the Fifteenth of October, 2007                                          
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Mallin                    14-JUN-04                                             
+Monday, the Twentieth of December, 2004                                         
+                                                                                
+Rogers                    26-AUG-06                                             
+Monday, the Fifth of March, 2007                                                
+                                                                                
+Gee                       12-DEC-07                                             
+Monday, the Sixteenth of June, 2008                                             
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Philtanker                06-FEB-08                                             
+Monday, the Eleventh of August, 2008                                            
+                                                                                
+Ladwig                    14-JUL-03                                             
+Monday, the Nineteenth of January, 2004                                         
+                                                                                
+Stiles                    26-OCT-05                                             
+Monday, the First of May, 2006                                                  
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Seo                       12-FEB-06                                             
+Monday, the Fourteenth of August, 2006                                          
+                                                                                
+Patel                     06-APR-06                                             
+Monday, the Ninth of October, 2006                                              
+                                                                                
+Rajs                      17-OCT-03                                             
+Monday, the Nineteenth of April, 2004                                           
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Davies                    29-JAN-05                                             
+Monday, the First of August, 2005                                               
+                                                                                
+Matos                     15-MAR-06                                             
+Monday, the Eighteenth of September, 2006                                       
+                                                                                
+Vargas                    09-JUL-06                                             
+Monday, the Fifteenth of January, 2007                                          
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Russell                   01-OCT-04                                             
+Monday, the Fourth of April, 2005                                               
+                                                                                
+Partners                  05-JAN-05                                             
+Monday, the Eleventh of July, 2005                                              
+                                                                                
+Errazuriz                 10-MAR-05                                             
+Monday, the Twelfth of September, 2005                                          
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Cambrault                 15-OCT-07                                             
+Monday, the Twenty-First of April, 2008                                         
+                                                                                
+Zlotkey                   29-JAN-08                                             
+Monday, the Fourth of August, 2008                                              
+                                                                                
+Tucker                    30-JAN-05                                             
+Monday, the First of August, 2005                                               
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Bernstein                 24-MAR-05                                             
+Monday, the Twenty-Sixth of September, 2005                                     
+                                                                                
+Hall                      20-AUG-05                                             
+Monday, the Twenty-Seventh of February, 2006                                    
+                                                                                
+Olsen                     30-MAR-06                                             
+Monday, the Second of October, 2006                                             
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Cambrault                 09-DEC-06                                             
+Monday, the Eleventh of June, 2007                                              
+                                                                                
+Tuvault                   23-NOV-07                                             
+Monday, the Twenty-Sixth of May, 2008                                           
+                                                                                
+King                      30-JAN-04                                             
+Monday, the Second of August, 2004                                              
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Sully                     04-MAR-04                                             
+Monday, the Sixth of September, 2004                                            
+                                                                                
+McEwen                    01-AUG-04                                             
+Monday, the Seventh of February, 2005                                           
+                                                                                
+Smith                     10-MAR-05                                             
+Monday, the Twelfth of September, 2005                                          
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Doran                     15-DEC-05                                             
+Monday, the Nineteenth of June, 2006                                            
+                                                                                
+Sewall                    03-NOV-06                                             
+Monday, the Seventh of May, 2007                                                
+                                                                                
+Vishney                   11-NOV-05                                             
+Monday, the Fifteenth of May, 2006                                              
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Greene                    19-MAR-07                                             
+Monday, the Twenty-Fourth of September, 2007                                    
+                                                                                
+Marvins                   24-JAN-08                                             
+Monday, the Twenty-Eighth of July, 2008                                         
+                                                                                
+Lee                       23-FEB-08                                             
+Monday, the Twenty-Fifth of August, 2008                                        
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Ande                      24-MAR-08                                             
+Monday, the Twenty-Ninth of September, 2008                                     
+                                                                                
+Banda                     21-APR-08                                             
+Monday, the Twenty-Seventh of October, 2008                                     
+                                                                                
+Ozer                      11-MAR-05                                             
+Monday, the Twelfth of September, 2005                                          
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Bloom                     23-MAR-06                                             
+Monday, the Twenty-Fifth of September, 2006                                     
+                                                                                
+Fox                       24-JAN-06                                             
+Monday, the Thirty-First of July, 2006                                          
+                                                                                
+Smith                     23-FEB-07                                             
+Monday, the Twenty-Seventh of August, 2007                                      
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Bates                     24-MAR-07                                             
+Monday, the First of October, 2007                                              
+                                                                                
+Kumar                     21-APR-08                                             
+Monday, the Twenty-Seventh of October, 2008                                     
+                                                                                
+Abel                      11-MAY-04                                             
+Monday, the Fifteenth of November, 2004                                         
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Hutton                    19-MAR-05                                             
+Monday, the Twenty-Sixth of September, 2005                                     
+                                                                                
+Taylor                    24-MAR-06                                             
+Monday, the Twenty-Fifth of September, 2006                                     
+                                                                                
+Livingston                23-APR-06                                             
+Monday, the Thirtieth of October, 2006                                          
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Grant                     24-MAY-07                                             
+Monday, the Twenty-Sixth of November, 2007                                      
+                                                                                
+Johnson                   04-JAN-08                                             
+Monday, the Seventh of July, 2008                                               
+                                                                                
+Taylor                    24-JAN-06                                             
+Monday, the Thirty-First of July, 2006                                          
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Fleaur                    23-FEB-06                                             
+Monday, the Twenty-Eighth of August, 2006                                       
+                                                                                
+Sullivan                  21-JUN-07                                             
+Monday, the Twenty-Fourth of December, 2007                                     
+                                                                                
+Geoni                     03-FEB-08                                             
+Monday, the Fourth of August, 2008                                              
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Sarchand                  27-JAN-04                                             
+Monday, the Second of August, 2004                                              
+                                                                                
+Bull                      20-FEB-05                                             
+Monday, the Twenty-Second of August, 2005                                       
+                                                                                
+Dellinger                 24-JUN-06                                             
+Monday, the Twenty-Fifth of December, 2006                                      
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Cabrio                    07-FEB-07                                             
+Monday, the Thirteenth of August, 2007                                          
+                                                                                
+Chung                     14-JUN-05                                             
+Monday, the Nineteenth of December, 2005                                        
+                                                                                
+Dilly                     13-AUG-05                                             
+Monday, the Twentieth of February, 2006                                         
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Gates                     11-JUL-06                                             
+Monday, the Fifteenth of January, 2007                                          
+                                                                                
+Perkins                   19-DEC-07                                             
+Monday, the Twenty-Third of June, 2008                                          
+                                                                                
+Bell                      04-FEB-04                                             
+Monday, the Ninth of August, 2004                                               
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Everett                   03-MAR-05                                             
+Monday, the Fifth of September, 2005                                            
+                                                                                
+McCain                    01-JUL-06                                             
+Monday, the Eighth of January, 2007                                             
+                                                                                
+Jones                     17-MAR-07                                             
+Monday, the Twenty-Fourth of September, 2007                                    
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Walsh                     24-APR-06                                             
+Monday, the Thirtieth of October, 2006                                          
+                                                                                
+Feeney                    23-MAY-06                                             
+Monday, the Twenty-Seventh of November, 2006                                    
+                                                                                
+OConnell                  21-JUN-07                                             
+Monday, the Twenty-Fourth of December, 2007                                     
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Grant                     13-JAN-08                                             
+Monday, the Fourteenth of July, 2008                                            
+                                                                                
+Whalen                    17-SEP-03                                             
+Monday, the Twenty-Second of March, 2004                                        
+                                                                                
+Hartstein                 17-FEB-04                                             
+Monday, the Twenty-Third of August, 2004                                        
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Fay                       17-AUG-05                                             
+Monday, the Twentieth of February, 2006                                         
+                                                                                
+Mavris                    07-JUN-02                                             
+Monday, the Ninth of December, 2002                                             
+                                                                                
+Baer                      07-JUN-02                                             
+Monday, the Ninth of December, 2002                                             
+                                                                                
+
+LAST_NAME                 HIRE_DATE                                             
+------------------------- ---------                                             
+REVIEW                                                                          
+------------------------------------------------                                
+Higgins                   07-JUN-02                                             
+Monday, the Ninth of December, 2002                                             
+                                                                                
+Gietz                     07-JUN-02                                             
+Monday, the Ninth of December, 2002                                             
+                                                                                
+
+107 rows selected.
+
+SQL> SPOOL OFF
